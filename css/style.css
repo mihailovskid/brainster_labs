@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+.bg-yelow {
+  background-color: #fcd232;
+}
+#logo img {
+  width: 40px;
+}
+#logo {
+  color: #302f38;
+  width: 60px;
+  font-size: x-small;
+}
+.text--black {
+  color: black;
+}
+.navbar-nav a {
+  color: rgb(0, 0, 0) !important;
+  font-weight: bold;
+  font-size: small;
+}
+.navbar-nav.top a:hover {
+  color: #302f38 !important;
+  transition: 0.3s ease;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #302f38;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 150px;
+}
+.sidenav a {
+  text-decoration: none !important;
+  font-size: 20px;
+  color: #fff !important;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav ul li {
+  width: fit-content;
+}
+.sidenav ul li a:hover {
+  color: #6d6d6d !important;
+  transition: 0.3s ease;
+}
+.bar1 {
+  width: 60px;
+  height: 8px;
+  background-color: #302f38;
+  margin-bottom: 8px;
+  border-radius: 10px;
+}
+.bar2 {
+  width: 45px;
+  height: 8px;
+  background-color: #302f38;
+  margin-left: auto;
+  margin-bottom: 8px;
+  border-radius: 10px;
+}
+.bar3 {
+  width: 30px;
+  height: 8px;
+  background-color: #302f38;
+  margin-left: auto;
+  border-radius: 10px;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: -25px;
+  right: 12px;
+  font-size: 100px;
+}
+#btn--edit {
+  background-color: #ff1300;
+  width: fit-content;
+  border-radius: 5px;
+  color: white !important;
+  padding: 10px 20px;
+}
+#btn--edit:hover {
+  color: #353535 !important;
+  transition: 0.3s ease;
+}
+.banner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.562),
+      rgba(0, 0, 0, 0.562)
+    ),
+    url(https://fervent-jones-f9e0a6.netlify.app/assets/imgs/hero-picture.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 60vh;
+}
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 50px !important;
+  font-weight: bolder !important;
+}
+.filter-button {
+  background-color: #302f38;
+  color: white;
+  font-weight: bold;
+  border: none;
+  transition: all 0.5s;
+}
+.filter-button:focus {
+  outline: none;
+  background-color: #eb3b3b;
+  color: #302f38;
+}
+.filter-button:hover {
+  background-color: #eb3b3b;
+  color: #302f38;
+  border: none;
+  outline: none;
+}
+.filter-button span {
+  align-items: center;
+}
+.filter-button:focus span i {
+  visibility: visible;
+}
+.filter-button span i {
+  visibility: hidden;
+}
+.card {
+  border-radius: 15px !important;
+  border: none !important;
+}
+.card img {
+  height: 30vh;
+  overflow: hidden;
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+}
+.btn-card {
+  background-color: #ff1300;
+  color: white;
+}
+.btn-card:hover {
+  color: black;
+  background-color: #fc1d1d;
+}
+#cards a:hover {
+  color: black;
+  text-decoration: none;
+}
+.card-heading {
+  font-size: xx-small;
+}
+.card-title {
+  font-size: medium;
+  margin-bottom: 5px !important;
+}
+.card-text {
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.grow {
+  transition: all 0.5s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  z-index: 1;
+}
+.card {
+  -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+}
+.nav-contact {
+  box-shadow: 0px 5px 20px 2px rgba(129, 119, 27, 0.253);
+}
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;
+}
+select + i.fa {
+  float: right;
+  margin-top: -40px;
+  margin-right: 5px;
+  pointer-events: none;
+  background-color: #fff;
+  padding-right: 16px;
+  padding-top: 10px;
+}
+form select option {
+  color: black;
+  font-weight: 500;
+}
+form select:hover {
+  cursor: pointer !important;
+}
+#disabled-user {
+  display: none;
+}
+.btn--form {
+  background-color: #ff1300;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+}
+.btn--form:hover {
+  background-color: #f32424;
+}
+.btn--form:focus {
+  outline: none;
+}
+.visibility-hidden {
+  visibility: hidden;
+}
+#table {
+  font-size: 15px;
+}
+@media (max-width: 425px) {
+  .banner {
+    height: 35vh !important;
+    background-position: left;
+  }
+  h1 {
+    font-size: 40px !important;
+  }
+}
+@media (max-width: 768px) {
+  ::-webkit-input-placeholder {
+    font-size: small;
+  }
+  :-moz-placeholder {
+    font-size: small;
+  }
+  .banner {
+    height: 50vh;
+  }
+}

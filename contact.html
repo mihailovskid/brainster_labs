@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Latest compiled and minified Bootstrap 4.4.1 CSS -->
+    <link rel="stylesheet" href="./css/assets/bootstrap.min.css" />
+
+    <!-- custom font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Latest Font-Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/3b2a155ba0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-dark bg-warning text-white py-2 nav-contact">
+        <a href="./index.html" id="logo"
+            class="text-uppercase text-center text-decoration-none font-weight-bold ml-lg-2"><img
+                src="./images/Logo.png" alt="image logo" class="d-block mx-auto mb-1">brainster</a>
+        <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav top ml-auto">
+                <li class="nav-item ml-3">
+                    <a class="nav-link" target="_blank" href="https://brainster.co/marketing/">Академија за маркетинг
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" target="_blank" href="https://brainster.co/full-stack/">Академија за
+                        програмирање</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" target="_blank" href="https://brainster.co/data-science/">Академија за data
+                        science</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" target="_blank" href="https://brainster.co/graphic-design/">Академија за
+                        дизајн</a>
+                </li>
+                <li class="nav-item ml-5">
+                    <a class="nav-link" id="btn--edit" href="./contact.html">Вработи наш студент</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="d-lg-none" onclick="openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="navbar-nav ml-auto pl-3">
+                <li class="nav-item pb-4">
+                    <a class="nav-link" target="_blank" href="https://brainster.co/marketing/">Академија за маркетинг
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item pb-3">
+                    <a class="nav-link" target="_blank" href="https://brainster.co/full-stack/">Академија за
+                        програмирање</a>
+                </li>
+                <li class="nav-item pb-3">
+                    <a class="nav-link" target="_blank" href="https://brainster.co/data-science/">Академија за data
+                        science</a>
+                </li>
+                <li class="nav-item pb-5">
+                    <a class="nav-link" target="_blank" href="https://brainster.co/graphic-design/">Академија за
+                        дизајн</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-3" id="btn--edit" href="#">Вработи наш студент</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="bg-warning py-5">
+            <div class="">
+                <div class="py-3 py-md-5 text-center">
+                    <p class="h1">Вработи студенти</p>
+                </div>
+                <form action="./backend/submit.php" method="POST"
+                    class="col-lg-8 col-md-10 mx-auto row needs-validation pb-5" novalidate>
+                    <div class="form-group col-md-6 px-0 px-md-2 mb-2">
+                        <label for="fullName" class="font-weight-bold">Име и презиме</label>
+                        <input type="text" class="form-control p-4" required id="fullName" name="name"
+                            placeholder="Вашето име и презиме" value="">
+                        <div class="invalid-feedback">
+                            <p class="mb-0">Ве молиме напишете го вашето Име и Презиме</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6 px-0 px-md-2 mb-2">
+                        <label for="nameCompany" class="font-weight-bold">Име на компанија</label>
+                        <input type="text" class="form-control p-4" required id="nameCompany" name="company"
+                            placeholder="Име на вашата компанија" value="">
+                        <div class="invalid-feedback">
+                            <p class="mb-0">Ве молиме напишете го вашето Име на компанија</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6 px-0 px-md-2 mb-2">
+                        <label for="eMail" class="font-weight-bold">Контакт имејл</label>
+                        <input type="email" class="form-control p-4" required id="eMail" name="email"
+                            placeholder="Контакт имејл на вашата компанија" value="">
+                        <div class="invalid-feedback">
+                            <p class="mb-0">Ве молиме напишете го вашиот контакт е-маил</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6 px-0 px-md-2 mb-2">
+                        <label for="phoneNumber" class="font-weight-bold">Контакт телефон</label>
+                        <input type="text" class="form-control p-4" required id="phoneNumber" name="phone"
+                            placeholder="Контакт телефон на вашата компанија" value="">
+                        <div class="invalid-feedback">
+                            <p class="mb-0">Ве молиме напишете го вашето телефонски број</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6 pr-md-2  px-0 px-md-2 mb-2 pb-5">
+                        <label for="student_type" class="font-weight-bold">Tип на студент</label>
+                        <select class="form-control form-control-lg" id="student_type" required name="student_type">
+                            <option value="" id="disabled-user" selected disabled>Избери тип на студент</option>
+                        </select>
+                        <i class="fa fa-chevron-down"></i>
+                        <div class="invalid-feedback">
+                            <p class="mb-0">Ве молиме изберете туп на студент</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6 px-0 px-md-2 mb-2">
+                        <label for="validationCustom05" class="visibility-hidden"><strong>NoVisible</strong></label>
+                        <button type="submit" class="text-uppercase btn-block w-100 btn--form">Испрати</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark py-3">
+        <div class="text-center text-white">
+            <span class="mb-0">Изработено со &#10084;&#65039 од студентите на Brainster</span>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/contact.js"></script>
+
+    <!-- jQuery library -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+
+    <!-- jQuery library -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+
+    <!-- Latest Compiled Bootstrap 4.4.1 JavaScript -->
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
